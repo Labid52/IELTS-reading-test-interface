@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1b1e21;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header .timer {
+    font-size: 16px;
+}
+
+header #reset-button {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:1.2rem;
+}
+
+header #reset-button:hover {
+    background: #e60000;
+}
+
+footer {
+    background: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+footer .nav-bar button {
+    padding: 5px 10px;
+    border: none;
+    background: #0c0c0c;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer .nav-bar button:hover {
+    background: #0e0e0e;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+.panel {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Grayish background for panels */
+.left-panel {
+    width: 50%;
+    border-right: 1px solid #ccc;
+    background-color: #f7f7f7; /* Light gray */
+}
+
+.right-panel {
+    width: 50%;
+    background-color: #f7f7f7; /* Light gray */
+}
+
+
+
+
+/* Highlighted text */
+/* Remove note marker styles */
+.note-marker {
+    display: none;
+}
+
+/* Highlighted text */
+/* Highlighted text */
+
+
+/* Text with notes */
+.note {
+    background-color: lightblue;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Note tooltip on hover */
+.note:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 12px;
+    color: #333;
+    white-space: nowrap;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.options label {
+    display: block; /* Each option on a new line */
+    margin-bottom: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and text */
+    cursor: pointer;
+}
+
+.options label:hover {
+    color: #005bb5; /* Highlight text on hover */
+}
+
+.options input[type="radio"]:checked + label {
+    font-weight: bold; /* Bold selected answer */
+}
+/* Ensure options are hidden initially */
+/* Ensure questions are stacked and options are hidden initially */
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Style for question text to indicate it is clickable */
+.question-text {
+    cursor: pointer;
+    color: #0073e6;
+}
+
+.question-text:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.context-menu {
+    position: absolute;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.context-menu button {
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.context-menu button:hover {
+    background: #f0f0f0;
+}
+
+.note-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.note-box textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.note-box button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #0073e6;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.note-box button:hover {
+    background: #005bb5;
+}
+
+
+.highlighted {
+    display: inline;
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+}
