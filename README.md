@@ -26,7 +26,7 @@ Before you begin, ensure that you have the following installed:
 1. **Clone the Repository** (if not already done):
 
    ```bash
-   git clone [<repository_url>](https://github.com/Labid52/IELTS-reading-test-interface)
+   git clone [<https://github.com/Labid52/IELTS-reading-test-interface>]
    ```
 
 2. **Navigate to the Project Folder**:
