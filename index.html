@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer-Based Test</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>IELTS</h1>
+    <button id="reset-button">Reset</button>
+    <div class="timer">Time Elapsed: 00:00</div>
+</header>
+
+<main>
+    <div class="panel left-panel" id="text-panel">
+       <p>placehold</p>
+    </div>
+    <div class="panel right-panel" id="question-panel">
+        <div> placeholder for qs</div>
+    </div>       
+</main>
+
+<footer>
+    <div class="nav-bar">
+        <button onclick="showQuestion(1)">1</button>
+        <button onclick="showQuestion(2)">2</button>
+        <button onclick="showQuestion(3)">3</button>
+        <button onclick="showQuestion(4)">4</button>
+        <button onclick="showQuestion(5)">5</button>
+        <button onclick="showQuestion(6)">6</button>
+        <button onclick="showQuestion(7)">7</button>
+        <button onclick="showQuestion(8)">8</button>
+        <button onclick="showQuestion(9)">9</button>
+        <button onclick="showQuestion(10)">10</button>
+        <button onclick="showQuestion(11)">11</button>
+        <button onclick="showQuestion(12)">12</button>
+        <button onclick="showQuestion(13)">13</button>
+        <button onclick="showQuestion(14)">14</button>
+        <button onclick="showQuestion(15)">15</button>
+        <button onclick="showQuestion(16)">16</button>
+        <button onclick="showQuestion(17)">17</button>
+        <button onclick="showQuestion(18)">18</button>
+        <button onclick="showQuestion(19)">19</button>
+        <button onclick="showQuestion(20)">20</button>
+        <button onclick="showQuestion(21)">21</button>
+        <button onclick="showQuestion(22)">22</button>
+        <button onclick="showQuestion(23)">23</button>
+        <button onclick="showQuestion(24)">24</button>
+        <button onclick="showQuestion(25)">25</button>
+        <button onclick="showQuestion(26)">26</button>
+        <button onclick="showQuestion(27)">27</button>
+        <button onclick="showQuestion(28)">28</button>
+        <button onclick="showQuestion(29)">29</button>
+        <button onclick="showQuestion(30)">30</button>
+        <button onclick="showQuestion(31)">31</button>
+        <button onclick="showQuestion(32)">32</button>
+        <button onclick="showQuestion(33)">33</button>
+        <button onclick="showQuestion(34)">34</button>
+        <button onclick="showQuestion(35)">35</button>
+        <button onclick="showQuestion(36)">36</button>
+        <button onclick="showQuestion(37)">37</button>
+        <button onclick="showQuestion(38)">38</button>
+        <button onclick="showQuestion(39)">39</button>
+        <button onclick="showQuestion(40)">40</button>
+        <button id="submit-button">Submit</button>
+        <button id="load-answers-button">Load Answers</button>
+        <button id="prev-button">Previous</button>
+        <button id="next-button">Next</button>        
+    </div>
+</footer>
+
+<div class="context-menu" id="context-menu">
+    <button onclick="highlightText()">Highlight</button>
+    <button onclick="addNote()">Add Note</button>
+</div>
+
+<div id="noteBox" style="display:none;" class="note-box">
+    <textarea id="noteContent"></textarea>
+    <button onclick="saveNote()">Save Note</button>
+    <button onclick="editNote()">Edit Note</button>
+    <button onclick="closeNoteBox()">Close</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
